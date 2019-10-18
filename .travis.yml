@@ -18,8 +18,8 @@ before_install:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   # - docker build -t bitofant/react-test -f ./client/Dockerfile.dev ./client
 
-scripts:
-  - docker run stephengrider/react-test npm test -- --coverage
+# scripts:
+  # - docker run stephengrider/react-test npm test -- --coverage
 
 deploy:
   provider: script
