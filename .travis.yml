@@ -16,10 +16,10 @@ before_install:
   - gcloud config set compute/zone us-east1-b
   - gcloud container clusters get-credentials multi-cluster
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker build -t bitofant/react-test -f ./client/Dockerfile.dev ./client
+  # - docker build -t bitofant/react-test -f ./client/Dockerfile.dev ./client
 
 scripts:
-  - docker run bitofant/react-test npm test -- --coverage
+  - docker run stephengrider/react-test npm test -- --coverage
 
 deploy:
   provider: script
