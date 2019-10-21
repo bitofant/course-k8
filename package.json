@@ -5,8 +5,7 @@
     "dependencies": {
     },
     "scripts": {
-        "test2": "docker run bitofant/react-test npm test -- --coverage",
-        "test": "cd client && npm test -- --coverage"
+        "test": "docker run bitofant/react-test npm test -- --coverage"
     }
   }
   
