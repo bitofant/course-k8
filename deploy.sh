@@ -16,5 +16,5 @@ docker push bitofant/multi-worker:$SHA
 echo Applying kubernetes changes
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=bitofant/multi-server:$SHA
-kubectl set image deployments/client-deployment server=bitofant/multi-client:$SHA
-kubectl set image deployments/worker-deployment server=bitofant/multi-worker:$SHA
+kubectl set image deployments/client-deployment client=bitofant/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=bitofant/multi-worker:$SHA
