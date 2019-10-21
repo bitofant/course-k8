@@ -1,0 +1,11 @@
+{
+    "name": "client",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+    },
+    "scripts": {
+      "test": "docker run bitofant/react-test npm test -- --coverage"
+    }
+  }
+  
