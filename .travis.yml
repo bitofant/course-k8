@@ -22,7 +22,10 @@ before_install:
   - bash ./build.sh
 
 scripts:
-  - npm run test
+  - docker run bitofant/multi-client npm test -- --coverage
+
+# scripts:
+#   - npm run test
 
 # scripts:
 #   - cd client && npm test --coverage
