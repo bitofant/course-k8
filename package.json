@@ -1,11 +1,12 @@
 {
-    "name": "client",
+    "name": "client-test-proxy",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
     },
     "scripts": {
-      "test": "docker run bitofant/react-test npm test -- --coverage"
+        "test2": "docker run bitofant/react-test npm test -- --coverage",
+        "test": "cd client && npm test -- --coverage"
     }
   }
   
