@@ -6,7 +6,7 @@
     },
     "scripts": {
         "test": "npm run test:client",
-        "test:client": "docker run bitofant/multi-client npm test -- --coverage"
+        "test:client": "docker run bitofant/multi-client:test npm test -- --coverage"
     }
   }
   

@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo Building images
+docker build -t bitofant/multi-client:test -f ./client/Dockerfile.dev ./client
 docker build -t bitofant/multi-client:latest -t bitofant/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t bitofant/multi-server:latest -t bitofant/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t bitofant/multi-worker:latest -t bitofant/multi-worker:$SHA -f ./worker/Dockerfile ./worker
